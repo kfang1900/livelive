@@ -1,0 +1,45 @@
+{
+  "name": "pkazo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsnd --respawn --transpile-only src/index.ts",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfang1900/pkazo.git"
+  },
+  "author": "Kevin Fang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kfang1900/pkazo/issues"
+  },
+  "homepage": "https://github.com/kfang1900/pkazo#readme",
+  "devDependencies": {
+    "@types/graphql": "^14.2.3",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "babel-plugin-relay": "^18.2.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.3.0",
+    "prettier": "^2.8.8",
+    "relay-compiler": "^18.2.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "graphql": "^16.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-relay": "^18.2.0",
+    "react-router-dom": "^7.3.0",
+    "relay-runtime": "^18.2.0"
+  }
+}
