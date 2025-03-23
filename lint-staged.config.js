@@ -1,9 +1,8 @@
 module.exports = {
-  '**/*.(ts)': () => 'npx tsc --noEmit',
-  '**/*.(ts)': (filenames) => [
+  '**/*.ts': (filenames) => [
+    'npx tsc --noEmit',
     `npx eslint --fix ${filenames.join(' ')}`,
     `npx prettier --write ${filenames.join(' ')}`,
   ],
-  '**/*.(md|json)': (filenames) =>
-    `npx prettier --write ${filenames.join(' ')}`,
+  '**/*.(md|json)': 'npx prettier --write',
 };
